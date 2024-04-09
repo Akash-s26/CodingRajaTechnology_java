@@ -3,10 +3,19 @@ import java.util.Scanner;
 public class OnlineBankingSystem {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        BankAccount obj = new BankAccount("ICICI Bank", "23245435501");
+        System.out.println("Welcome to the Online Banking System!");
+        System.out.println("Please enter your bank name: ");
+        String bankName = scanner.nextLine();
+
+        System.out.println("Please enter your customer ID: ");
+        String customerID = scanner.nextLine();
+
+        BankAccount obj = new BankAccount(bankName, customerID);
         obj.showMenu();
 
+        scanner.close();
     }
 
 }
@@ -118,4 +127,3 @@ class BankAccount {
         } while (option != 'E');
     }
 }
-
