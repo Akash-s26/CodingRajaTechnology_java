@@ -41,12 +41,60 @@ The Online Banking System project is a simple console-based banking application 
 - Push to the branch (`git push origin feature/my-feature`).
 - Create a new Pull Request.
 
-**Authors:**
-- [Akash Sabale](https://github.com/Akash-s26)
-
-**Acknowledgments:**
+- **Acknowledgments:**
 - Inspired by the need for simple banking solutions.
 - Thanks to all contributors and users.
 
+
+** Library Management System - README **
+
 ---
+
+**Description:**
+The Library Management System project is a simple console-based application that allows users to manage books in a library. Users can view the list of available books, check out books, return books, and pay fines for overdue books. This project demonstrates the use of Java classes and basic user input/output operations for managing library operations.
+
+**Features:**
+1. **List of Books:** View the list of books available in the library.
+2. **Check Out Book:** Borrow a book from the library.
+3. **Return Book:** Return a borrowed book to the library.
+4. **Fine Management:** Pay fines for overdue books.
+5. **User-Friendly Interface:** Provides a simple and intuitive interface for users to interact with.
+
+**How to Run:**
+1. Compile the Java file:
+   
+   javac LibraryManagementSystem.java
+   javac Book.java
+2. Run the compiled program:
+   
+   java LibraryManagementSystem
+   java Book
+
+3. Follow the on-screen prompts to interact with the library management system.
+
+**Usage:**
+1. Choose from the available options to perform library operations:
+   - 1: List of Books Available
+   - 2: Check Out Book
+   - 3: Return Book
+   - 4: Pay Fine
+   - 5: Exit
+
+**Contributing:**
+- Fork the repository.
+- Create a new branch for your feature (`git checkout -b feature/my-feature`).
+- Make your changes.
+- Commit your changes (`git commit -am 'Add new feature'`).
+- Push to the branch (`git push origin feature/my-feature`).
+- Create a new Pull Request.
+
+
+**Acknowledgments:**
+- Inspired by the need for simple library management solutions.
+- Thanks to all contributors and users.
+
+
+**Authors:**
+- [Akash Sabale](https://github.com/Akash-s26)
+
 
