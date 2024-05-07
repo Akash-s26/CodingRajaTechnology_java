@@ -1,0 +1,40 @@
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
+
+# Sample text
+text = "Natural Language Processing (NLP) is a subfield of computer science."
+
+# Tokenization (splitting text into words)
+tokens = word_tokenize(text)
+
+# Print all tokens
+print("Tokens:", tokens)
+
+# Stop word removal using English stopwords
+stop_words = set(stopwords.words('english'))
+filtered_tokens = [token for token in tokens if token not in stop_words]
+
+# Print tokens after stop word removal
+print("\nTokens after stop word removal:", filtered_tokens)
+
+# Word frequency count
+word_counts = {}
+for token in tokens:
+  if token in word_counts:
+    word_counts[token] += 1
+  else:
+    word_counts[token] = 1
+
+# Print word frequencies
+print("\nWord frequencies:", word_counts)
+
+# POS tagging (identifying parts of speech)
+pos_tags = nltk.pos_tag(filtered_tokens)
+
+# Print POS tags
+print("\nPOS tags:", pos_tags)
